@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-epub"
+    version="1.0.0">
+    <name>Epub</name>
+    <description>Cordova epub Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,Epub</keywords>
+    <engines>
+            <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/Epub.js" name="Epub">
+        <clobbers target="window.Epub" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDEpub">
+                <param name="ios-package" value="CDEpub" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDEpub.h" />
+        <source-file src="src/ios/CDEpub.m" />
+        <framework src="libz.tbd" />
+        <framework src="libxml2.tbd" />
+        <framework src="libstdc++.tbd" />
+
+    </platform>
+</plugin>

@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-epub",
+  "version": "1.0.0",
+  "description": "Cordova epub Plugin",
+  "cordova": {
+    "id": "cordova-plugin-epub",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ns-oliver/cordova-plugin-epub.git"
+  },
+  "keywords": [
+    "cordova",
+    "Epub",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "lazygleen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ns-oliver/cordova-plugin-epub/issues"
+  },
+  "homepage": "https://github.com/Ns-oliver/cordova-plugin-epub#readme"
+}
